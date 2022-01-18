@@ -22,4 +22,4 @@
 
 - Game controls: use the rocker of left controller to rotate the perspective, use the rocker of right controller to move forward, press the trigger button to fire shells.  
 
-    ![ ](https://github.com/picoxr/Photon-RoomProperties-Sync/blob/main/Screenshots/1.png)
+    ![ ](https://github.com/picoxr/Photon-RoomProperties-Sync/blob/main/Screenshots/1.jpeg)
