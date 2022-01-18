@@ -21,3 +21,5 @@
 - In the scene "MainScene", there are several fragile walls that disappear when hit by shells. When player A fires a shell and smashes a certain weakwall, we want both player B, who is already in the scene, and player C, who joins the room after the wall disappears, to see that weakwall is no longer in their scene. 
 
 - Game controls: use the rocker of left controller to rotate the perspective, use the rocker of right controller to move forward, press the trigger button to fire shells.  
+
+    ![ ](https://github.com/picoxr/Photon-RoomProperties-Sync/blob/main/Screenshots/1.png)
