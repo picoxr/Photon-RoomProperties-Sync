@@ -28,6 +28,8 @@
  * THE SOFTWARE.
  */
 
+using Pico.Platform;
+using Pico.Platform.Models;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -47,52 +49,18 @@ public class GameManager : MonoBehaviour
     public string UserName;
     
     public static int WeakWallCount = 0;
-    //private bool isLoginFinished = false;
-
-    //Tiger
-    /*private SendUserMessage m_PicoUserMessage;*/
+    private User myUser;
     
-
     void Start()
     {
-        
-
-       /* m_PicoUserMessage = GameObject.Find("PicoPayment").GetComponent<SendUserMessage>();*/
-        
         playerTank = GameObject.FindGameObjectWithTag("Player");
-        /*m_PicoUserMessage.DELEGATE_GET_USER_INFO_RESULT += LoginToGameService;*/
-
-        /*loadingScreen.SetActive(true);*/
-        
         WeakWallCount = GameObject.FindGameObjectsWithTag("WeakWall").Length;
-
-        // first login to Pico account
-        /*Unity.XR.PXR.LoginSDK.Login();*/
-
-
-        // login the with Pico openID, currently the input value is fake one        
     }
     
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //{
-        //    if (isPaused)
-        //    {
-        //        GameUIScreen.SetActive(true);
-        //        pauseScreen.SetActive(false);
-        //        isPaused = false;
-        //        Time.timeScale = 1.0f;
-        //    }
-        //    else
-        //    {
-        //        GameUIScreen.SetActive(false);
-        //        pauseScreen.SetActive(true);
-        //        isPaused = true;
-        //        Time.timeScale = 0.0f;
-        //    }
-        //}
+    
     }
 
     public void LoginToGameService(string openid, string name)
@@ -114,23 +82,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdatePlayerName()
     {
-        
-        //string display_name = null;
-        
-        //if (result.InfoResultPayload.PlayerProfile != null)
-        //{
-        //    display_name = result.InfoResultPayload.PlayerProfile.DisplayName;
-        //}
-        
-        //if (display_name == null)
-        //{
-            
-        //}
-
-        Debug.Log("PlayerProfile is null");
-        //Display name must be between 3 and 25 characters
-        
-
+       // Debug.Log("PlayerProfile is null");       
     }
 
     

@@ -6,9 +6,6 @@ using UnityEngine.XR;
 
 public class PhotonPlayerManager : MonoBehaviourPunCallbacks, IPunObservable
 {
-    /*[Tooltip("The Player's UI GameObject Prefab")]
-    [SerializeField]
-    private GameObject playerUiPrefab;*/
 
     [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
     public static GameObject LocalPlayerInstance;
@@ -38,11 +35,7 @@ public class PhotonPlayerManager : MonoBehaviourPunCallbacks, IPunObservable
                 _cameraWork.OnStartFollowing();
             }
         }
-        /*if (this.playerUiPrefab != null)
-        {
-            GameObject _uiGo = Instantiate(this.playerUiPrefab);
-            _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
-        }*/
+       
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -57,8 +50,6 @@ public class PhotonPlayerManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             transform.position = new Vector3(0f, 5f, 0f);
         }
-        /*GameObject _uiGo = Instantiate(this.playerUiPrefab);
-        _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);*/
     }
 
     void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode loadingMode)

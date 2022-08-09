@@ -5,12 +5,11 @@
 ## Environment：
 
 - Unity 2019.4.31f1
-- Unity XR Platform SDK (Legacy) v1.2.5
+- Pico Unity Integration SDK v2.0.5
 
 ## Applicable devices:
 
 - Neo 3 series
-- Neo 2 series
 
 ## Description：
 
