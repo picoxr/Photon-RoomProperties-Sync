@@ -4,7 +4,7 @@
 
 ## Environment：
 
-- Unity 2020.3.36f1
+- Unity 2020.3.33f1
 - Pico Unity Integration SDK v2.1.2
 
 ## Applicable devices:
